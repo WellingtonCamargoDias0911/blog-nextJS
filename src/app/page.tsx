@@ -1,5 +1,6 @@
 import { Container } from '@/components/Container';
 import { Header } from '@/components/Header';
+import { PostHeading } from '@/components/PostHeading';
 import { PostsList } from '@/components/PostsList';
 import { SpinLoader } from '@/components/SpinLoader';
 import clsx from 'clsx';
@@ -30,9 +31,9 @@ export default async function HomePage() {
           >
             20/04/2025 10:00
           </time>
-          <h1 className='text2xl/tight font-extrabold sm:text-4xl'>
-            <Link href='#'>Lorem ipsum dolor sit amet.</Link>
-          </h1>
+          <PostHeading as='h1' url='#'>
+            Lorem ipsum dolor sit amet.
+          </PostHeading>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
           consequuntur possimus tenetur iure consequatur sint fugiat vero,
           dolorum alias assumenda laboriosam veniam nesciunt temporibus
